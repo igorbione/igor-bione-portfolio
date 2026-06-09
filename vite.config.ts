@@ -9,7 +9,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 
 export default defineConfig({
-  base: "/ecoly-data-craft/",   // <-- add this
+  base: "/igor-bione-portfolio/",   // <-- add this
   tanstackStart: {
     server: { entry: "server" },
   },
