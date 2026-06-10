@@ -328,7 +328,7 @@ function Projects() {
           </h3>
           <div className="grid md:grid-cols-2 gap-5">
             <ProjectCard
-              title="Viabilidade Transportadora\n"
+              title="Viabilidade Transportadora"
               desc={t("p1_desc")}
               tags={["Python", "Analytics", "Freelance"]}
               href="https://github.com/igorbione/Projeto_Logistica_TT"
@@ -425,7 +425,7 @@ function Teaching() {
   return (
     <section id="teaching" className="border-t border-border">
       <div className="container-x py-24 md:py-32">
-        <SectionHeader label={t("teaching_label")} title={"// ENSINO - MATERIAIS DIDÁTICOS DE CURSOS MINISTRADOS POR MIM"} />
+        <SectionHeader label={t("teaching_label")} title={t("teaching_title")} />
         <div className="mt-12 grid md:grid-cols-2 gap-5">
           {courses.map((c) => (
             <a

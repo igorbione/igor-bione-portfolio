@@ -59,7 +59,7 @@ export const translations: Record<Lang, Dict> = {
     projects_auto: "Automação",
     btn_github: "Ver no GitHub",
 
-    teaching_label: "Ensino",
+    teaching_label: "ENSINO - MATERIAIS DIDÁTICOS DE CURSOS MINISTRADOS POR MIM",
     teaching_title: "Cursos e materiais didáticos ",
     year: "Ano",
 
