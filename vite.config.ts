@@ -9,7 +9,9 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 
 export default defineConfig({
-  base: "/igor-bione-portfolio/",   // <-- add this
+  vite: {
+    base: "/igor-bione-portfolio/",
+  },
   tanstackStart: {
     server: { entry: "server" },
   },
