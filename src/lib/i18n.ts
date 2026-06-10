@@ -20,11 +20,11 @@ export const translations: Record<Lang, Dict> = {
     about_label: "Sobre",
     about_title: "Do laboratório ao deploy",
     about_intro:
-      "Eu sou cientista de dados com formação em Ciências Biológicas e doutorado em Ecologia & Evolução pela Universidade Federal de Goiás, com período de pesquisa na Università degli Studi di Napoli Federico II (Itália) e MBA em Data Science & Analytics pela USP. Com mais de 7 anos de experiência, atuo no ciclo completo de produtos de dados: da engenharia de pipelines ao deploy de modelos de machine learning, passando por automação com IA e comunicação de resultados para stakeholders.",
+      "Eu sou cientista de dados com doutorado em Ecologia & Evolução pela Universidade Federal de Goiás, incluindo período de pesquisa na Università degli Studi di Napoli Federico II (Itália) e MBA em Data Science & Analytics pela USP. Com mais de 7 anos de experiência, atuo no ciclo completo de produtos de dados: da engenharia de pipelines ao deploy de modelos de machine learning, passando por automação com IA e comunicação de resultados para stakeholders.",
     about_quote_1:
-      "A minha trajetória começa no laboratório — literalmente. Biólogo de formação, passei anos trabalhando com dados de ecossistemas brasileiros, aprendendo que perguntas mal formuladas levam a respostas inúteis, não importa quanta tecnologia você use. Essa mentalidade científica rigorosa moldou tudo o que veio depois.",
+      "A minha trajetória começa no laboratório — literalmente. Biólogo de formação, passei anos trabalhando com diferentes tipos de dados, aprendendo que perguntas mal formuladas levam a respostas erradas, não importa quanta tecnologia você use. Essa mentalidade científica rigorosa moldou profundamente minha trajetória.",
     about_quote_2:
-      "O caminho para a ciência de dados foi natural: modelagem estatística avançada no doutorado, análise geoespacial no ICMBio (onde meus modelos influenciaram políticas públicas nacionais), até a transição para o mercado — onde hoje atuo construindo produtos de dados de ponta a ponta com o mesmo rigor de quem foi treinado para defender uma tese.",
+      "O caminho para a ciência de dados foi natural: da modelagem estatística avançada no doutorado, até a transição para o mercado — onde hoje atuo construindo produtos de dados de ponta a ponta com o mesmo rigor de quem foi treinado para defender uma tese.",
 
     card1_title: "Raízes Científicas",
     card1_body:
@@ -60,11 +60,11 @@ export const translations: Record<Lang, Dict> = {
     btn_github: "Ver no GitHub",
 
     teaching_label: "Ensino",
-    teaching_title: "Cursos e materiais didáticos",
+    teaching_title: "Cursos e materiais didáticos ",
     year: "Ano",
 
     writing_label: "Textos",
-    writing_title: "Escritos no LinkedIn",
+    writing_title: "Textos publicados",
     btn_read_linkedin: "Ler no LinkedIn",
 
     papers_label: "Artigos Científicos",
@@ -75,7 +75,7 @@ export const translations: Record<Lang, Dict> = {
     contact_title: "Vamos conversar",
     contact_body:
       "Se você tem um problema de dados, uma colaboração em mente ou apenas quer trocar ideias sobre ciência e tecnologia — me chame.",
-    footer_copy: "© 2025 Igor Bione",
+    footer_copy: "© 2026 Igor Bione",
 
     p1_desc: "Projeto freelance analisando a viabilidade de negócio para um cliente de transporte. Análise exploratória completa e recomendações orientadas por dados.",
     p2_desc: "Modelo de visão computacional para reconhecimento de Língua Brasileira de Sinais (Libras).",
@@ -255,5 +255,5 @@ export const timelineItems = [
   { year: "2024", pt: "PhD em Ecologia & Evolução, UFG", en: "PhD in Ecology & Evolution, UFG", es: "PhD en Ecología y Evolución, UFG" },
   { year: "2024", pt: "Analista de Dados, Naturae: lead técnico de relatórios de licenciamento ambiental", en: "Data Analyst, Naturae: technical lead of environmental-licensing reports", es: "Analista de Datos, Naturae: lead técnico de reportes de licenciamiento ambiental" },
   { year: "2025", pt: "MBA em Data Science & Analytics, USP", en: "MBA in Data Science & Analytics, USP", es: "MBA en Data Science & Analytics, USP" },
-  { year: "2025–", pt: "Cientista de Dados, WAM Empreendimentos: produtos com LSTM e IA generativa", en: "Data Scientist, WAM Empreendimentos: products with LSTM and generative AI", es: "Científico de Datos, WAM Empreendimentos: productos con LSTM e IA generativa" },
+  { year: "2024–Atualmente", pt: "Cientista de Dados, WAM Empreendimentos: produtos com LSTM e IA generativa", en: "Data Scientist, WAM Empreendimentos: products with LSTM and generative AI", es: "Científico de Datos, WAM Empreendimentos: productos con LSTM e IA generativa" },
 ];

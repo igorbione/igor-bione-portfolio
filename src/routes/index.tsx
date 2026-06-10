@@ -108,7 +108,7 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background pointer-events-none" />
       </div>
       <div className="container-x relative py-28 md:py-40">
-        <p className="section-label mb-6">// portfolio · 2025</p>
+        <p className="section-label mb-6">// PORTFOLIO · 2026</p>
         <h1 className="font-display text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] max-w-4xl">
           Igor Bione
         </h1>
@@ -328,7 +328,7 @@ function Projects() {
           </h3>
           <div className="grid md:grid-cols-2 gap-5">
             <ProjectCard
-              title="Projeto Logística TT"
+              title="Viabilidade Transportadora\n"
               desc={t("p1_desc")}
               tags={["Python", "Analytics", "Freelance"]}
               href="https://github.com/igorbione/Projeto_Logistica_TT"
@@ -352,7 +352,7 @@ function Projects() {
           </h3>
           <div className="grid md:grid-cols-2 gap-5">
             <ProjectCard
-              title="Automação de Relatórios iMile"
+              title="Automação de Relatórios de uma pequena Transportadora"
               desc={t("p3_desc")}
               tags={["Python", "Automation", "RPA"]}
               href="https://github.com/igorbione/Automacao_Relatorio_iMile"
@@ -425,7 +425,7 @@ function Teaching() {
   return (
     <section id="teaching" className="border-t border-border">
       <div className="container-x py-24 md:py-32">
-        <SectionHeader label={t("teaching_label")} title={t("teaching_title")} />
+        <SectionHeader label={t("teaching_label")} title={"// ENSINO - MATERIAIS DIDÁTICOS DE CURSOS MINISTRADOS POR MIM"} />
         <div className="mt-12 grid md:grid-cols-2 gap-5">
           {courses.map((c) => (
             <a
