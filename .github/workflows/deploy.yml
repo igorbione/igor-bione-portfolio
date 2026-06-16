@@ -23,9 +23,17 @@ jobs:
           bun-version: latest
       - run: bun install
       - run: bun run build
+      - name: Show build output
+        run: |
+          echo "=== index.html locations ==="
+          find . -name "index.html" -not -path "*/node_modules/*" -not -path "*/.git/*" 2>/dev/null || echo "none found"
+          echo "=== .output/ tree ==="
+          ls -la .output/ 2>/dev/null || echo ".output/ not found"
+          echo "=== dist/ tree ==="
+          ls -la dist/ 2>/dev/null || echo "dist/ not found"
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .output/public
+          path: dist
 
   deploy:
     needs: build
