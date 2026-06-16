@@ -23,12 +23,37 @@ jobs:
           bun-version: latest
       - run: bun install
       - run: bun run build
-      - name: Show build output
+      - name: Generate index.html for GitHub Pages
         run: |
-          echo "=== dist/client/ full tree ==="
-          find dist/client -not -path "*/node_modules/*" 2>/dev/null || echo "dist/client not found"
-          echo "=== Vite manifest ==="
-          cat dist/client/.vite/manifest.json 2>/dev/null || echo "no manifest"
+          BASE="/igor-bione-portfolio"
+          OUT="dist/client/index.html"
+
+          printf '<!DOCTYPE html>\n<html lang="pt">\n<head>\n' > "$OUT"
+          printf '  <meta charset="utf-8" />\n' >> "$OUT"
+          printf '  <meta name="viewport" content="width=device-width, initial-scale=1" />\n' >> "$OUT"
+          printf '  <title>Igor Bione — Profissional de Dados Full Stack</title>\n' >> "$OUT"
+          printf '  <meta name="description" content="Portfolio de Igor Bione: cientista de dados, biologo e PhD em Ecologia e Evolucao. Engenharia de dados, ML e IA aplicada." />\n' >> "$OUT"
+          printf '  <meta name="author" content="Igor Bione" />\n' >> "$OUT"
+          printf '  <link rel="preconnect" href="https://fonts.googleapis.com" />\n' >> "$OUT"
+          printf '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n' >> "$OUT"
+          printf '  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />\n' >> "$OUT"
+
+          for f in dist/client/assets/*.css; do
+            fname=$(basename "$f")
+            printf '  <link rel="stylesheet" href="%s/assets/%s" />\n' "$BASE" "$fname" >> "$OUT"
+          done
+
+          printf '</head>\n<body>\n' >> "$OUT"
+
+          for f in dist/client/assets/*.js; do
+            fname=$(basename "$f")
+            printf '  <script type="module" src="%s/assets/%s"></script>\n' "$BASE" "$fname" >> "$OUT"
+          done
+
+          printf '</body>\n</html>\n' >> "$OUT"
+
+          echo "=== Generated index.html ==="
+          cat "$OUT"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/client
