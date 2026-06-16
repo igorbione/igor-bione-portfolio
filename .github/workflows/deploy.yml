@@ -25,12 +25,10 @@ jobs:
       - run: bun run build
       - name: Show build output
         run: |
-          echo "=== index.html locations ==="
-          find . -name "index.html" -not -path "*/node_modules/*" -not -path "*/.git/*" 2>/dev/null || echo "none found"
-          echo "=== .output/ tree ==="
-          ls -la .output/ 2>/dev/null || echo ".output/ not found"
-          echo "=== dist/ tree ==="
-          ls -la dist/ 2>/dev/null || echo "dist/ not found"
+          echo "=== dist/client/ full tree ==="
+          find dist/client -not -path "*/node_modules/*" 2>/dev/null || echo "dist/client not found"
+          echo "=== Vite manifest ==="
+          cat dist/client/.vite/manifest.json 2>/dev/null || echo "no manifest"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/client
