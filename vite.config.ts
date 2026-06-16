@@ -11,13 +11,7 @@ export default defineConfig({
     base: '/igor-bione-portfolio/',
   },
   tanstackStart: {
-    server: {
-      entry: "server",
-      preset: "static",
-      prerender: {
-        routes: ["/"],
-      },
-    },
+    server: { entry: "server" },
   },
 });
 
